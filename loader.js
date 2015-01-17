@@ -5,17 +5,17 @@
  * Time: 10:34 PM
  */
 var scripts = [
-    "https://rawgit.com/Puntukas/Tsun-bot/edit/master/commands.js",
-    "https://rawgit.com/Puntukas/Tsun-bot/edit/master/cron.js",
-    "https://rawgit.com/Puntukas/Tsun-bot/edit/master/lottery.js",
-    "hhttps://rawgit.com/Puntukas/Tsun-bot/edit/master/blackjack.js",
-    "https://rawgit.com/Puntukas/Tsun-bot/edit/master/afkcheck.js",
-    "https://rawgit.com/Puntukas/Tsun-bot/edit/master/handlers.js",
-    "https://rawgit.com/Puntukas/Tsun-bot/edit/master/bot.js"];
+    "https://rawgit.com/Puntukas/Tsun-bot/master/commands.js",
+    "https://rawgit.com/Puntukas/Tsun-bot/master/cron.js",
+    "https://rawgit.com/Puntukas/Tsun-bot/master/lottery.js",
+    "https://rawgit.com/Puntukas/Tsun-bot/master/blackjack.js",
+    "https://rawgit.com/Puntukas/Tsun-bot/master/afkcheck.js",
+    "https://rawgit.com/Puntukas/Tsun-bot/master/handlers.js",
+    "https://rawgit.com/Puntukas/Tsun-bot/master/bot.js"];
 
 
 function updateBot() {
-    setTimeout(function(){$.getScript("https://rawgit.com/Puntukas/Tsun-bot/edit/master/loader.js");}, 2000);
+    setTimeout(function(){$.getScript("https://rawgit.com/Puntukas/Tsun-bot/master/loader.js");}, 2000);
 }
 
 
