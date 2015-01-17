@@ -123,7 +123,7 @@ function stop(update) {
 
 
 function meetupReminder() {
-    if((meetupUrl.length > 0) && ((Date.now() - lastMeetupMessageTime) > 600000)) {
+    if((meetupUrl.length > 1) && ((Date.now() - lastMeetupMessageTime) > 600000)) {
         chat("Make sure to check the Tsun website at " + meetupUrl + "!");
         lastMeetupMessageTime = Date.now();
     }
