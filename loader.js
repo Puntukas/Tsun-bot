@@ -5,17 +5,17 @@
  * Time: 10:34 PM
  */
 var scripts = [
-    "https://rawgit.com/overdrivenpotato/EdmpPlugBot/master/src/commands.js",
-    "https://rawgit.com/overdrivenpotato/EdmpPlugBot/master/src/cron.js",
-    "https://rawgit.com/overdrivenpotato/EdmpPlugBot/master/src/lottery.js",
-    "https://rawgit.com/overdrivenpotato/EdmpPlugBot/master/src/blackjack.js",
-    "https://rawgit.com/overdrivenpotato/EdmpPlugBot/master/src/afkcheck.js",
-    "https://rawgit.com/overdrivenpotato/EdmpPlugBot/master/src/handlers.js",
-    "https://rawgit.com/overdrivenpotato/EdmpPlugBot/master/src/bot.js"];
+    "https://rawgit.com/Puntukas/Tsun-bot/edit/master/commands.js",
+    "https://rawgit.com/Puntukas/Tsun-bot/edit/master/cron.js",
+    "https://rawgit.com/Puntukas/Tsun-bot/edit/master/lottery.js",
+    "hhttps://rawgit.com/Puntukas/Tsun-bot/edit/master/blackjack.js",
+    "https://rawgit.com/Puntukas/Tsun-bot/edit/master/afkcheck.js",
+    "https://rawgit.com/Puntukas/Tsun-bot/edit/master/handlers.js",
+    "https://rawgit.com/Puntukas/Tsun-bot/edit/master/bot.js"];
 
 
 function updateBot() {
-    setTimeout(function(){$.getScript("https://rawgit.com/overdrivenpotato/EdmpPlugBot/master/src/loader.js");}, 2000);
+    setTimeout(function(){$.getScript("https://rawgit.com/Puntukas/Tsun-bot/edit/master/loader.js");}, 2000);
 }
 
 
