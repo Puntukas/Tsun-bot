@@ -76,12 +76,12 @@ online = API.getAudience().length + 1;
 }
 var room = "/me You are listening to "+$("#room-name").find(".bar-value").text()+"'s Plug.DJ";
 API.sendChat(room);
-var song = "/me Recent Song: "+$("#now-playing-media").find(".bar-value").text();
+var song = "/me :musical_note: Recent Song: "+$("#now-playing-media").find(".bar-value").text();
 API.sendChat(song);
-var dj = "/me Recent DJ: "+API.getDJ().username;
+var dj = "/me :musical_note: Recent DJ: "+API.getDJ().username;
 API.sendChat(dj);
 
-var vote = "/me Woots: "+API.getScore().positive+" Grabs: "+API.getScore().grabs+" Mehs: "+API.getScore().negative;
+var vote = "/me :+1: : "+API.getScore().positive+" :star: : "+API.getScore().grabs+" :-1: : "+API.getScore().negative;
 API.sendChat(vote);
 var nextdj = "/me Next DJ: "+API.getWaitList()[0].username;
 API.sendChat(nextdj);
