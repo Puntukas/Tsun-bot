@@ -108,7 +108,7 @@ function lottoCleanup() {
 
 
 function lotteryHourly() {// enable or disable the lottery
-    lotteryEnabled = (API.getWaitList().length >= 7);// disable lottery unless 7+ DJs queued
+    lotteryEnabled = (API.getWaitList().length >= 3);// disable lottery unless 3+ DJs queued
 
     if (lotteryEnabled) {
         log("The lottery is now open, type !lottery for a chance to be bumped to #1 in the DJ wait list!", log.visible);
