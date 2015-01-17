@@ -74,20 +74,16 @@ online = API.getAudience().length;
 } else {
 online = API.getAudience().length + 1;
 }
-var room = "/me You are listening to "+$("#room-name").find(".bar-value").text()+"'s Plug.DJ";
-API.sendChat(room);
 var song = "/me :musical_note: Recent Song: "+$("#now-playing-media").find(".bar-value").text();
 API.sendChat(song);
 var dj = "/me :musical_note: Recent DJ: "+API.getDJ().username;
 API.sendChat(dj);
 
-var vote = "/me :+1: : "+API.getScore().positive+" :star: : "+API.getScore().grabs+" :-1: : "+API.getScore().negative;
+var vote = "/me Woot:+1:: "+API.getScore().positive+" Grab:star:: "+API.getScore().grabs+" Meh:-1:: "+API.getScore().negative;
 API.sendChat(vote);
-var nextdj = "/me Next DJ: "+API.getWaitList()[0].username;
+var nextdj = "/me :musical_note: Next DJ: "+API.getWaitList()[0].username;
 API.sendChat(nextdj);
 
-var pa = "/me Players Online: "+online;
-API.sendChat(pa);
 sa = false;
 }
 if (time > 23) {
@@ -107,9 +103,6 @@ API.off(API.CHAT, function(data){
 protect = false;
 });
 }, 5000);
-var room = $("#room-name").find(".bar-value").text();
-console.log("["+room+"Bot] Is now Online!");
-API.sendChat("["+room+"Bot] is now Running!");
 
 function log(message, level) {
     level = (typeof level === "undefined") ? log.info : level;
@@ -429,7 +422,7 @@ function init() {
     cronFiveMinutes(); // 5-minute checks
 //    cronSpecialEvent(); // 1.5 minute checks
 
-    log("Loaded Tsun-bot v " + version, log.visible);
+    log("[Tsun-LT | Chill music Bot] is now Running!", log.visible);
 }
 
 try {
