@@ -124,7 +124,7 @@ function stop(update) {
 
 function meetupReminder() {
     if((meetupUrl.length > 0) && ((Date.now() - lastMeetupMessageTime) > 600000)) {
-        chat("Make sure to " + upvotes[Math.round(Math.random() * (upvotes.length - 1))] + " the Tsun website at " + meetupUrl + "!");
+        chat("Make sure to check the Tsun website at " + meetupUrl + "!");
         lastMeetupMessageTime = Date.now();
     }
 }
