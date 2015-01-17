@@ -17,7 +17,7 @@ var SpecialGreetingEnabled  = false;
 var SpecialEventLockdown    = false;
 
 var version                 = "BETA!";
-var meetupUrl               = (typeof meetupUrl=== "http://tsunplugdj.weebly.com/")         ? ""    : meetupUrl;
+var meetupUrl               = "http://tsunplugdj.weebly.com/";
 var SpecialGreeting         = "This room is dedicated to relax and have a good time! Room rules and permissible room genres: http://tinyurl.com/thesoundsyouneed Channels and OP List: http://tinyurl.com/thesoundsyouneed1";
 
 var trackAFKs               = (typeof trackAFKs === "undefined")? [] : trackAFKs;// format: array[0=>username, 1=>userID, 2=>time of last msg, 3=>message data/txt, 4=bool warned or not]
