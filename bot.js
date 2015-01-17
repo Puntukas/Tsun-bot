@@ -76,13 +76,8 @@ online = API.getAudience().length + 1;
 }
 var song = "/me :musical_note: Recent Song: "+$("#now-playing-media").find(".bar-value").text();
 API.sendChat(song);
-var dj = "/me :musical_note: Recent DJ: "+API.getDJ().username;
-API.sendChat(dj);
-
 var vote = "/me Woot:+1:: "+API.getScore().positive+" Grab:star:: "+API.getScore().grabs+" Meh:-1:: "+API.getScore().negative;
 API.sendChat(vote);
-var nextdj = "/me :musical_note: Next DJ: "+API.getWaitList()[0].username;
-API.sendChat(nextdj);
 
 sa = false;
 }
