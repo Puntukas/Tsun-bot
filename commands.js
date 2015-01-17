@@ -303,10 +303,6 @@ var commands = [
         eightball(author, args);
     }),
 
-    new Command("ping", function(author) {
-       log("Don't ping me @" + author +, log.visible);
-    }),
-
     new Command("smoke", function() {
         log("SMOKE WEED ERRYDAY", log.visible);
     }, null, null, false),
@@ -383,7 +379,7 @@ var commands = [
         log("The only synth you'll ever need", log.visible);
     }, null, null, false),
 
-    new Command("shrek", function(author) {
-        log("But @" + author + ", Shrek is LOVE...", log.visible);
+    new Command("Ping", function(author) {
+        log("Don't Ping me @" + author + "!", log.visible);
     }, null, null, false)
 ];
