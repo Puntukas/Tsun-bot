@@ -303,6 +303,13 @@ var commands = [
         eightball(author, args);
     }),
 
+   new Command("Ping", function() {
+       log("Pong", log.visible);
+    }, null, null, false),
+    
+    new Command("Ping", function() {
+       log("Pong", log.visible);
+    }, null, null, false),
 
     new Command("smoke", function() {
         log("SMOKE WEED ERRYDAY", log.visible);
