@@ -135,6 +135,12 @@ r = Math.floor(Math.random() * JoinMsg.length);
 API.sendChat(JoinMsg[r].replace("user", user.username));
 };
 
+ function onLeave(user) {
+var LeaveMsg = ["@user has left :(", "Good bye, @user!", "Bye, @user!", "It was nice to meet you, @user"];
+r = Math.floor(Math.random() * LeaveMsg.length);
+API.sendChat(LeaveMsg[r].replace("user", user.username));
+};
+
 function dispatch(message, author) {
     while(true) {
         if(message.indexOf("<a") == -1) {
