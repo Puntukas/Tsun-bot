@@ -66,10 +66,10 @@ log.info = 3;
 log.visible = 2;
 
 
- if (data.lastPlay.score != null) {
- bot.chat("Last song: :thumbsup: " + data.lastPlay.score.positive + " :star: " + data.lastPlay.score.grabs + " :thumbsdown: " + data.lastPlay.score.negative);
- bot.chat(":musical_note: " + data.dj.username + " started playing \"" + data.media.title + "\" by " + data.media.author + " :musical_note:");
- }
+var vote = "/me Woots: "+API.getScore().positive+" Grabs: "+API.getScore().grabs+" Mehs: "+API.getScore().negative;
+API.sendChat(vote);
+var nextdj = "/me Next DJ: "+API.getWaitList()[0].username;
+API.sendChat(nextdj);
 
 function log(message, level) {
     level = (typeof level === "undefined") ? log.info : level;
