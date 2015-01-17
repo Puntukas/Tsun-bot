@@ -129,6 +129,12 @@ function meetupReminder() {
     }
 }
 
+ function UserJoin(user) {
+var JoinMsg = ["@user has joined!", "welcome, @user!", "Hey there, @user!", "Glad you came by, @user"];
+r = Math.floor(Math.random() * JoinMsg.length);
+API.sendChat(JoinMsg[r].replace("user", user.username));
+};
+
 function dispatch(message, author) {
     while(true) {
         if(message.indexOf("<a") == -1) {
